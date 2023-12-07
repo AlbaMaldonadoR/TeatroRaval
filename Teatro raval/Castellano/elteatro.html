@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="../img/logoraval2.svg"/>
+    <title>Teatro Raval</title>
+    <link rel="stylesheet" href="../style/elteatro.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-header">
+                <nav id="nav" class="main-nav" >
+                    <div class="nav-links" >
+                      <a class="link-item"  href="index.html" >Inicio</a>
+                      <a class="link-item" href="Progrmacion.html" >Programación</a>
+                      <a class="link-item"   href="suscribirse.html" >Mi perfil</a>
+                      <select class="con_estilos">
+                        <option><a class="link-item" href="elteatro.html" >El teatro</a></option>
+                        <option><a href="preguntas.html">Preguntas Frecuentes</a></option>
+                    
+                      </select>
+                    </div>
+                  </nav>
+                  <button id="button-menu" class="button-menu" >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+                
+        </div>
+
+        <div class="grid-idiomas">  
+            <a class="idiomas"  href="../Valenciano/elteatre.html">Valenciano/</a>
+            <a class="idiomas" id="rojo" href="elteatro.html">Castellano</a>
+        </div>
+
+        <div class="grid-logo">  
+            <img class="logo" src="../img/logoraval2.svg" alt="">
+        </div>
+    <div class="grid-guia">
+        <a href="elteatro.html">El teatro</a>
+    </div>
+    <div class="grid-horario">
+        <div>
+        <h2>Horario de atención al público</h2>
+        <p>De lunes a viernes de 9:00 a 14:00 y de 16:00 a 23:00</p>
+        <p>Fines de semana y festivos de 18:00 a 12:00</p>
+        </div>
+
+    </div>
+     <div class="grid-contacto">
+      <h2>Formas de contactar</h2>
+        <p>Correo electrónico: 		museoraval@gmail.com</p>
+        <p>Teléfono:			964 67 23 54 98</p>
+        <p>Facebook: 			Museo Raval</p>
+     </div>
+     <div class="grid-foto">
+        <div id="mapa">
+            <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+            var setting = {"query":"Calle Conde Pestagua, 38, 12004 Castelló de la Plana, España","width":455,"height":600,"satellite":false,"zoom":14,"placeId":"ChIJhebiA9P_Xw0RL2SzC784WF8","cid":"0x5f5838bf0bb3642f","coords":[39.988629,-0.0352757],"lang":"es","queryString":"Calle Conde Pestagua, 38, 12004 Castelló de la Plana, España","centerCoord":[39.988629,-0.0352757],"id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"1033274"};
+            var d = document;
+            var s = d.createElement('script');
+            s.src = 'https://1map.com/js/script-for-user.js?embed_id=1033274';
+            s.async = true;
+            s.onload = function (e) {
+              window.OneMap.initMap(setting)
+            };
+            var to = d.getElementsByTagName('script')[0];
+            to.parentNode.insertBefore(s, to);
+          })();</script><a href="https://1map.com/es/map-embed">1 Map</a></div>
+     </div>
+     <div class="grid-formulario">
+        <form action="">
+            <h2>¿Tienes alguna duda? </h2>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" maxlength="30"><br><br>
+            <label for="name">Apellido:</label>
+            <input type="text" id="name" name="name" maxlength="30"><br><br>
+            <label for="name">Correo:</label>
+            <input type="text" id="name" name="name" maxlength="30"><br><br>
+            <label for="name">Teléfono:</label>
+            <input type="number" id="name" name="name" maxlength="30"><br><br>
+            <label for="name">Escribe aquí tu consulta y contactaremos contigo:</label>
+            <input type="text" id="name" name="name" class="texto" maxlength="300"><br><br>
+        </form>
+        <input class="my-button" type="submit" value="Enviar" onclick="alert('Tu comentario se ha enviado con éxito');">
+       
+     </div>
+   
+    </div>
+    </body>
+    <footer>
+      <p>Creado por Alba Rueda</p>
+      <p>Correo:museoraval@gmail.es</p>
+      <p>Telefono de contacto: 964 27 89 20 34</p>
+    </footer>
+    <script src="../Js/index.js"></script>

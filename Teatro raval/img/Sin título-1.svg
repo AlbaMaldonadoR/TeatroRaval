@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1123.89 437.6">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00731d;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #5e00d0;
+      }
+
+      .cls-6 {
+        font-family: TimesNewRomanPSMT, 'Times New Roman';
+        font-size: 22.56px;
+      }
+
+      .cls-4 {
+        fill: #9a0000;
+      }
+    </style>
+  </defs>
+  <rect class="cls-5" x=".5" y=".5" width="1122.89" height="436.6"/>
+  <rect class="cls-4" x="150.12" y="90.88" width="45.96" height="42.89"/>
+  <rect class="cls-1" x="148.59" y="323.73" width="45.96" height="42.89"/>
+  <rect class="cls-3" x="701.1" y="90.88" width="45.96" height="42.89"/>
+  <rect class="cls-2" x="700.07" y="323.22" width="45.96" height="42.89"/>
+  <text class="cls-6" transform="translate(206.8 119.57) scale(1.08 1)"><tspan x="0" y="0">Butaca ocupada</tspan></text>
+  <text class="cls-6" transform="translate(204.11 351.61) scale(1.08 1)"><tspan x="0" y="0">Butaca disponible</tspan></text>
+  <text class="cls-6" transform="translate(760.8 119.27) scale(1.08 1)"><tspan x="0" y="0">Butaca selecionada</tspan></text>
+  <text class="cls-6" transform="translate(753.74 335.27) scale(1.08 1)"><tspan x="0" y="0">Butaca reservada para </tspan><tspan x="0" y="27.07">personas con movilidad reducida</tspan></text>
+</svg>

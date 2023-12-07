@@ -1,0 +1,353 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.grid-container {
+    display: grid;
+    grid-template-rows: 0.3fr 5fr   ;
+    grid-template-columns: 5fr  15fr 5fr ;
+    grid-gap: 0%;
+    grid-template-areas:
+    "logoarea areaheader areaidiomas "
+    "areaformulario areaformulario areaformulario"
+    "footer footer footer"
+    }
+
+    .grid-header{
+        background-color: #E5DCD3;
+        grid-area: areaheader; 
+        position: relative;
+        
+    }
+    .grid-logo{
+        background-color: #E5DCD3;
+        grid-area :logoarea;
+    
+    }
+    
+    .grid-idiomas{
+        background-color: #E5DCD3;
+        grid-area: areaidiomas;
+    }
+    .grid-formulario{
+        background-image: url("../img/fondo.jpg");
+        background-size: cover;
+        grid-area: areaformulario;
+    }
+    footer{
+        color: white;
+        grid-area: footer;
+        background-color: #9B9B9A;
+        padding: 3%;
+      }
+    a{
+      color: black;
+      text-decoration: none;
+      font-family: 'Times New Roman', Times, serif;
+      font-style: oblique;
+     }
+    .idiomas{
+        align-items: flex-start;
+        color: black;
+        cursor: pointer;
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .link-item{
+      color: black;
+      cursor: pointer;
+      margin-left: 7%;
+      text-decoration: none;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 800;
+      font-size: 1.2em;
+      line-height: 150px;
+    
+    }
+    .logo{
+      height: auto;
+      margin: 5%;
+      width: 20%;
+    }
+    #rojo{
+        color: #AB0932;
+    }
+
+    button{
+      margin: 2%;
+        display: none;
+    }
+.info{
+             width: 450px;
+            padding: 10px;
+            margin: auto;
+            margin-top: 100px;
+            background:#3b3b3b;
+            border-radius: 5px;
+}
+
+    .con_estilos {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 800;
+        font-size: 1.2em;
+        font-style: oblique;
+        width: 150px;
+        padding: 5px;
+        border: 0px solid #E5DCD3;
+        height: 40px;
+        background-color:#E5DCD3;
+        margin-left: 4%;
+        }
+
+        input[type=onlick]{
+          display: block;
+          padding: 3%;
+          margin: 3%;
+          background-color:#AB0932;
+          border-radius: 12px;
+          border-style: none;
+          color: white;
+          cursor: pointer;}
+
+          #rojo{
+            color: #AB0932;
+        }
+        #rojoindice{
+          color:#AB0932;
+        }
+
+        .imgRedonda{
+            margin-left: 40%;
+            width:100px;
+            height:100px;
+            border-radius:150px;
+            border:1px solid #666;
+             
+          }
+        p{
+            color: white;
+            padding-bottom: 3%;
+        }
+        .persona{
+            margin-left: 40%;
+            color:white;
+          
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .form{
+            width: 450px;
+            padding: 30px;
+            margin: auto;
+            margin-top: 100px;
+            background:#3b3b3b;
+            border-radius: 5px;
+        }
+        /*--TITULO-----------------------*/
+        .titulo{
+            color: white;
+            margin-bottom: 20px;
+        }
+        /*--CAJAS-DE-DATOS---------------*/
+        .cajas{
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 2px;
+            border: none;
+            border-left: 10px solid #d9e4ea;
+            transition: all .5s ease;
+        }
+        .cajas:hover, .cajas:focus{
+            border-left: 10px solid gray;
+        }
+        /*--TERMINOS-Y-CONDICIONES-------*/
+        .termino1{
+            text-align: center;
+            color: white;
+        }
+        .termino2{
+            color:white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .termino2:hover{
+            color: #dbdbdb;
+        }
+        /*--BOTON-DE-REGISTRARSE---------*/
+        .btn{
+            width: 100%;
+            padding: 15px;
+            border-radius: 2px;
+            border: none;
+            margin: 20px 0;
+            font-size: 15px;
+            background:#AB0932;
+            color: white;
+            cursor: pointer;
+            transition: all .5s ease;
+        }
+        .btn:hover{
+            background:#9B9B9A;
+        }
+        /*--YA-TENGO-CUENTA--------------*/
+        .tengo-cuenta{
+            text-align: center;
+            color:white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .tengo-cuenta:hover{
+            color: #dbdbdb;
+        }
+
+ 
+    
+ @media (max-width: 950px) {
+        .grid-container {
+          display: grid;
+          grid-template-rows: 0.5fr 6fr 0.5fr;
+          grid-template-columns:  5fr  15fr 5fr ;
+          grid-gap: 0px;
+          grid-template-areas:
+          "areaidiomas logoarea areaheader"
+          "areaformulario areaformulario areaformulario"
+          "footer footer footer"
+        }
+        button{
+            opacity: 100%;
+        }
+        .logo{
+            text-align: center;
+            height: auto;
+            margin: 5%;
+            margin-left: 40%;
+            width: 20%;
+        }
+        .link-item{
+            line-height: 10px;}
+
+        .main-header{
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #E5DCD3;
+            padding: 0 0.4rem;
+          }
+          .main-nav{
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100%;
+            margin-left: -100%;
+            transition: all .2s linear;
+            z-index: 100;
+          
+          }
+          
+          .main-nav.show{
+            margin-left: 0;
+          }
+          
+          .nav-links{
+            background-color:#AB0932;
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            height: 100%;
+            align-items: center;
+           
+          }
+          
+          .link-item{
+            margin-top: 2rem;
+            color:black;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+          }
+          
+          .link-item::after {
+            position: absolute;
+            content: "";
+            background-color: black;
+            bottom: -5px;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            transition: 0.3s ease all;
+          }
+          
+          .link-item:hover::after {
+            width: 100%;
+          }
+          
+          .button-menu{
+            z-index: 200;
+            width: 40px;
+            height: 40px;
+            border: none;
+            display: flex;
+            background: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+          }
+          
+          .button-menu span{
+            width: 37px;
+            height: 4px;
+            margin-bottom: 6px;
+            margin-left: 130px;
+            position: relative;
+            background: #AB0932;
+            margin-right: 80%;
+            border-radius: 3px;
+            transform-origin: 4px 0px;
+            transition: all .2s linear;
+            
+          }
+          
+          .button-menu.close span {
+            opacity: 1;
+            transform: rotate(45deg) translate(0px, 0px);
+            background: #E5DCD3;
+          }
+          
+          .button-menu.close span:nth-child(2){
+            transform: rotate(-45deg) translate(-8px, 5px);
+          }
+          
+          .button-menu.close span:nth-child(3){
+            display: none;
+          }
+            .con_estilos {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 800;
+            font-size: 1.2em;
+            width: 150px;
+            padding: 5px;
+            border: 0px solid #E5DCD3;
+            height: 40px;
+            background-color:#AB0932;
+            margin-left: 20%;
+            margin-top: 10%;
+            
+            }
+
+          
+          #rojoindice{
+            color:white;
+          }
+          .form{
+            width: 80%;
+            padding: 4%;
+            margin: auto;
+            margin-top: 100px;
+            background:#3b3b3b;
+            border-radius: 5px;
+        }
+     
+    }

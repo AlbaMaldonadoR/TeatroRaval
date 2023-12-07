@@ -1,0 +1,373 @@
+.grid-container {
+    display: grid;
+    grid-template-rows: 0.3fr 0.2fr 0.001fr 0.2fr 0.2fr 0.2fr  0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr  1fr  ;
+    grid-template-columns: 5fr  10fr 5fr ;
+    grid-gap: 0%;
+    grid-template-areas:
+    "logoarea areaheader areaidiomas "
+    "areaguia areaguia areaguia"
+    "areapantalla areapantalla areapantalla "
+    ". areafila1 ."
+    ". areafila2 ."
+    ". areafila3 ."
+    ". areafila4 ."
+    ". areafila5 ."
+    ". areafila6 ."
+    ". areafila7 ."
+    ". areafila8 ."
+    ". areafila9 ."
+    ". areafila10 ."
+    ". areatabla."
+    }
+/* Creación de los grids */
+    .grid-guia{
+      grid-area: areaguia;
+    }
+    .grid-pantalla{
+      grid-area: areapantalla;
+      margin-bottom: 4%;
+    }
+    .grid-fila1{
+      background-color: #dbdbd8;
+      padding-top: 2%;
+      grid-area: areafila1;
+    }
+    .grid-fila2{
+      background-color: #dbdbd8;
+      grid-area: areafila2;
+    }
+    .grid-fila3{
+      background-color: #dbdbd8;
+      grid-area: areafila3;
+    }
+    .grid-fila4{
+      background-color: #dbdbd8;
+      grid-area: areafila4;
+    }
+    .grid-fila5{
+      background-color: #dbdbd8;
+      grid-area: areafila5;
+    }
+    .grid-fila6{
+      background-color: #dbdbd8;
+      grid-area: areafila6;
+    }
+    .grid-fila7{
+      background-color: #dbdbd8;
+      grid-area: areafila7;
+    }
+    .grid-fila8{
+      background-color: #dbdbd8;
+      grid-area: areafila8;
+    }
+    .grid-fila9{
+      background-color: #dbdbd8;
+      grid-area: areafila9;
+    }
+    .grid-fila10{
+      background-color: #dbdbd8;
+      grid-area: areafila10;
+    }
+    .grid-header{
+        background-color: #E5DCD3;
+        grid-area: areaheader; 
+        position: relative;
+        
+    }
+    .grid-logo{
+        background-color: #E5DCD3;
+        grid-area :logoarea;
+    
+    }
+    .grid-tabla{
+      grid-area: areatabla;
+    }
+    .grid-idiomas{
+        background-color: #E5DCD3;
+        grid-area: areaidiomas;
+    }
+    .grid-foto{
+      margin-bottom: 2%;
+      grid-area: areafoto;
+     }
+     footer{
+      background-color: #9B9B9A;
+      padding: 3%;
+      color: white;
+    }
+    /* Dando estilo a la parte del header */
+
+    .idiomas{
+        align-items: flex-start;
+        color: black;
+        cursor: pointer;
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .link-item{
+      color: black;
+      cursor: pointer;
+      margin-left: 10%;
+      text-decoration: none;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 800;
+      font-size: 1.2em;
+      line-height: 150px;
+    
+    }
+    .logo{
+      height: auto;
+      margin: 5%;
+      width: 20%;
+    }
+    #rojo{
+        color: #AB0932;
+    }
+
+    button{
+      margin: 2%;
+        display: none;
+    }
+    /* Dando estilo a la guia */
+
+    a{
+      color: black;
+      text-decoration: none;
+      font-family: 'Times New Roman', Times, serif;
+      font-style: oblique;
+     }
+
+
+    .con_estilos {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 800;
+        font-size: 1.2em;
+        font-style: oblique;
+        width: 150px;
+        padding: 5px;
+        border: 0px solid #E5DCD3;
+        height: 40px;
+        background-color:#E5DCD3;
+        margin-left: 4%;
+        }
+
+          /* Dando estilo a las butacas */
+        input[type=submit]{
+          display: block;
+          padding: 3%;
+          margin: 3%;
+          background-color:#AB0932;
+          border-radius: 12px;
+          border-style: none;
+          color: white;
+          cursor: pointer;}
+
+        #miBoton , #miBotond , #miBotonr{
+          border:none;
+            padding: 1%;
+            margin: 0 auto;
+            margin-left: 1%;
+            width: 6%;  
+
+        }
+          #miBoton:focus{
+            color: black;
+           background-color:black;
+        }
+
+        #miBotond{
+          background-color:#5E00D0;
+          color: #5E00D0;
+        }
+        #miBotonr{
+          background-color:#AB0932;
+          color:#AB0932;
+        }
+        #miBoton{
+          background-color:#00731D;
+          color: #00731D;
+        }
+
+      .tabla{
+        margin-top: 4%;
+        height: 70%;
+        width: auto;
+      }
+
+
+      .pantalla{
+        display: flex;
+        width: 30%;
+        height: auto;
+        margin: 0 auto;
+        justify-content: center;}
+
+   
+    
+ @media (max-width: 950px) {
+        .grid-container {
+          display: grid;
+          grid-template-rows: 0.5fr 0.2fr 0.5fr 0.2fr 0.2fr 0.2fr  0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr  0.5fr ;
+          grid-template-columns:  5fr  15fr 5fr ;
+          grid-gap: 0px;
+          grid-template-areas:
+          "areaidiomas logoarea areaheader"
+          "areaguia areaguia areaguia"
+          "areapantalla areapantalla areapantalla "
+          ". areafila1 ."
+          ". areafila2 ."
+          ". areafila3 ."
+          ". areafila4 ."
+          ". areafila5 ."
+          ". areafila6 ."
+          ". areafila7 ."
+          ". areafila8 ."
+          ". areafila9 ."
+          ". areafila10 ."
+          ". areatabla."
+         
+        }
+        button{
+            opacity: 100%;
+        }
+        .logo{
+            text-align: center;
+            height: auto;
+            margin: 5%;
+            margin-left: 40%;
+            width: 20%;
+        }
+        .link-item{
+            line-height: 10px;}
+
+        .main-header{
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #E5DCD3;
+            padding: 0 0.4rem;
+          }
+          .main-nav{
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100%;
+            margin-left: -100%;
+            transition: all .2s linear;
+            z-index: 100;
+          
+          }
+          
+          .main-nav.show{
+            margin-left: 0;
+          }
+          
+          .nav-links{
+            background-color:#AB0932;
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            height: 100%;
+            align-items: center;
+           
+          }
+          
+          .link-item{
+            margin-top: 2rem;
+            color:black;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+          }
+          
+          .link-item::after {
+            position: absolute;
+            content: "";
+            background-color: black;
+            bottom: -5px;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            transition: 0.3s ease all;
+          }
+          
+          .link-item:hover::after {
+            width: 100%;
+          }
+          
+          .button-menu{
+            z-index: 200;
+            width: 40px;
+            height: 40px;
+            border: none;
+            display: flex;
+            background: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+          }
+          
+          .button-menu span{
+            width: 37px;
+            height: 4px;
+            margin-bottom: 6px;
+            margin-left: 130px;
+            position: relative;
+            background: #AB0932;
+            margin-right: 80%;
+            border-radius: 3px;
+            transform-origin: 4px 0px;
+            transition: all .2s linear;
+            
+          }
+          
+          .button-menu.close span {
+            opacity: 1;
+            transform: rotate(45deg) translate(0px, 0px);
+            background: #E5DCD3;
+          }
+          
+          .button-menu.close span:nth-child(2){
+            transform: rotate(-45deg) translate(-8px, 5px);
+          }
+          
+          .button-menu.close span:nth-child(3){
+            display: none;
+          }
+            .con_estilos {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 800;
+            font-size: 1.2em;
+            width: 150px;
+            padding: 5px;
+            border: 0px solid #E5DCD3;
+            height: 40px;
+            background-color:#AB0932;
+            margin-left: 20%;
+            margin-top: 10%;
+            
+            }
+
+          
+          #rojoindice{
+            color:white;
+          }
+
+          #miBoton{
+            background-color:#00731D;
+            color: #00731D;
+            margin: 0 auto;
+            margin-left: 1%;
+            margin-top: 3%;
+            width: 6%;
+
+        }
+          #miBoton:focus{
+            color: black;
+           background-color:black;
+        }
+     
+    }

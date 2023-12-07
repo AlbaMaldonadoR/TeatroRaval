@@ -1,0 +1,316 @@
+.grid-container {
+    display: grid;
+    grid-template-rows: 0.02fr 1fr auto;
+    grid-template-columns: 1fr 5fr 5fr  1fr ;
+    grid-gap: 0%;
+    grid-template-areas:
+    "logoarea areaheader areaheader  areaidiomas "
+    "areaperfil areaperfil areaperfil areaperfil "
+    "areapendiente areapendiente areapendiente areapendiente"
+    ". areapelicula1 areapelicula2  ."
+    " areavistas  areavistas areavistas  areavistas "
+    ". areapeliculavista1 areapeliculavista2 . "
+    ". areapeliculavista3 areapeliculavista4 . "
+    " areafooter  areafooter  areafooter  areafooter "
+    }
+
+    .grid-header{
+        background-color: #E5DCD3;
+        grid-area: areaheader; 
+        position: relative;
+        
+    }
+    .grid-logo{
+        background-color: #E5DCD3;
+        grid-area :logoarea;
+    
+    }
+    .grid-idiomas{
+        background-color: #E5DCD3;
+        grid-area: areaidiomas;
+    }
+    .grid-perfil{
+      display: inline;
+      grid-area: areaperfil;
+      
+      margin-top: 2%;
+    }
+    .grid-pendientes{
+        grid-area: areapendiente;
+    }
+    .grid-vistas{
+        grid-area: areavistas;
+    }
+    .grid-pelicula1{
+     
+      background-color: #E5DCD3;
+        grid-area: areapelicula1;
+        margin: 1%;
+        padding-bottom: 10%;
+        border-radius: 12px;
+       
+      
+    }
+    .grid-pelicula2{
+        grid-area: areapelicula2;
+        background-color: #E5DCD3;
+        margin: 1%;
+        border-radius: 12px;
+    }
+
+    .grid-peliculavista1{
+      grid-area: areapeliculavista1;
+  
+  }
+
+  .grid-peliculavista2{
+    grid-area: areapeliculavista2;
+    
+}
+
+
+.grid-peliculavista3{
+  grid-area: areapeliculavista3;
+ 
+}
+
+
+.grid-peliculavista4{
+  grid-area: areapeliculavista4;
+  
+}
+ 
+  footer{
+    grid-area: areafooter;
+    background-color: #9B9B9A;
+    padding: 3%;
+    color: white;
+  }
+button{
+    display: none;
+}
+.con_estilos {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 800;
+  font-size: 1.2em;
+  font-style: oblique;
+  width: 150px;
+  padding: 5px;
+  border: 0px solid #E5DCD3;
+  height: 40px;
+  background-color:#E5DCD3;
+  margin-left: 4%;
+  }
+
+.idiomas{
+    align-items: flex-start;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.link-item{
+  color: black;
+  cursor: pointer;
+  margin-left: 10%;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: oblique;
+  font-weight: 800;
+  font-size: 1.2em;
+  line-height: 150px;
+
+}
+.logo{
+  height: auto;
+  margin: 5%;
+  width: 50%;
+}
+#rojo{
+    color: #AB0932;
+}
+#rojoindice{
+  color:#AB0932;
+}
+
+.portada{
+  display: flex;
+  margin: 0 auto;
+  height: auto;
+  width: 50%;
+}
+p , h3 , h4{
+  margin-top: 5%;
+  text-align: center;
+}
+
+
+.imgRedonda{
+  display: inline;
+    width:100px;
+    height:100px;
+    border-radius:150px;
+    border:1px solid #666;
+   
+}
+.datos{
+    color:black;
+    margin-top: 5%;
+    display: inline;
+    font-weight: 700;
+    text-decoration: none;
+   
+    
+}
+h2{
+  margin-top: 5%;
+  text-align: center;
+}
+
+
+
+@media (max-width: 950px) {
+    .grid-container {
+      display: grid;
+      grid-template-rows: 1fr 2fr 1fr auto  ;
+      grid-template-columns: 10fr  10fr 8fr ;
+      grid-gap: 0px;
+      grid-template-areas:
+      "areaidiomas logoarea areaheader"
+      "areaperfil areaperfil areaperfil  "
+    "areapendiente areapendiente areapendiente "
+    "areapelicula1 areapelicula1 areapelicula1"
+    "areapelicula2 areapelicula2 areapelicula2"
+    " areavistas  areavistas areavistas"
+    "areapeliculavista1 areapeliculavista1  areapeliculavista1"
+    "areapeliculavista2 areapeliculavista2  areapeliculavista2"
+    "areapeliculavista3 areapeliculavista3  areapeliculavista3"
+    "areapeliculavista4 areapeliculavista4  areapeliculavista4"
+    " areafooter  areafooter  areafooter  "
+    
+    }
+    button{
+        opacity: 100%;
+    }
+    .logo{
+        text-align: center;
+        height: auto;
+        margin: 5%;
+        width: 40%;
+    }
+    .link-item{
+        line-height: 10px;}
+
+    .main-header{
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #E5DCD3;
+        padding: 0 0.4rem;
+      }
+      .main-nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        margin-left: -100%;
+        transition: all .2s linear;
+        z-index: 100;
+      }
+      
+      .main-nav.show{
+        margin-left: 0;
+      }
+      
+      .nav-links{
+        background-color:#AB0932;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 100%;
+        align-items: center;
+       
+      }
+      
+      .link-item{
+        margin-top: 2rem;
+        color:black;
+        text-decoration: none;
+        font-weight: bold;
+        position: relative;
+      }
+      
+      .link-item::after {
+        position: absolute;
+        content: "";
+        background-color: black;
+        bottom: -5px;
+        left: 0;
+        width: 0%;
+        height: 3px;
+        transition: 0.3s ease all;
+      }
+      
+      .link-item:hover::after {
+        width: 100%;
+      }
+      
+      .button-menu{
+        z-index: 200;
+        width: 40px;
+        height: 40px;
+        border: none;
+        display: flex;
+        background: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+      
+      .button-menu span{
+        width: 37px;
+        height: 4px;
+        margin-bottom: 6px;
+        margin-left: 130px;
+        position: relative;
+        background: #AB0932;
+        border-radius: 3px;
+        transform-origin: 4px 0px;
+        transition: all .2s linear;
+        
+      }
+      
+      .button-menu.close span {
+        opacity: 1;
+        transform: rotate(45deg) translate(0px, 0px);
+        background: #E5DCD3;
+      }
+      
+      .button-menu.close span:nth-child(2){
+        transform: rotate(-45deg) translate(-8px, 5px);
+      }
+      
+      .button-menu.close span:nth-child(3){
+        display: none;
+      }
+      
+      #rojoindice{
+        color:white;
+      }
+      .con_estilos {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 800;
+        font-size: 1.2em;
+        width: 150px;
+        padding: 5px;
+        border: 0px solid #E5DCD3;
+        height: 40px;
+        background-color:#AB0932;
+        margin-left: 20%;
+        margin-top: 10%;
+        
+      }
+    }
